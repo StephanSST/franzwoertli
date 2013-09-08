@@ -1,0 +1,56 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui">
+  <ui:style>
+    .important {
+    	font-weight: bold;
+    }
+  </ui:style>
+  <g:HTMLPanel>
+    <g:Grid>
+    	<g:row>
+    		<g:customCell>
+    			<g:Label text="Name"/>
+    		</g:customCell>
+    		<g:customCell>
+    			<g:TextBox ui:field="userName"/>
+    		</g:customCell>
+      </g:row>
+      <g:row>
+    		<g:customCell>
+    			<g:Label text="Passwort"/>
+    		</g:customCell>
+    		<g:customCell>
+    			<g:PasswordTextBox ui:field="password"/>
+    		</g:customCell>
+      </g:row>
+      <g:row>
+      	<g:customCell>
+      		<g:Label/>
+      	</g:customCell>
+      	<g:customCell>
+      		<g:HorizontalPanel>
+      			<g:Button ui:field="btnLogin" text="Anmelden"/>
+      			<g:Button ui:field="btnForgotPassword" text="Passwort vergessen"/>
+      		</g:HorizontalPanel>
+      	</g:customCell>
+    	</g:row>
+      <g:row>
+      	<g:customCell>
+      		<g:Label/>
+      	</g:customCell>
+      	<g:customCell>
+      		<g:HorizontalPanel>
+      			<g:Button ui:field="btnNewUser" text="Neuer User"/>
+      			<g:Cell width="10">
+      				<g:Label/>
+      			</g:Cell>
+      			<g:Cell verticalAlignment="ALIGN_MIDDLE">
+      				<g:Label text="Email:" ui:field="lblEmail"/>
+      			</g:Cell>
+      			<g:TextBox ui:field="eMail"/>
+      		</g:HorizontalPanel>
+      	</g:customCell>
+      </g:row>
+    </g:Grid>
+  </g:HTMLPanel>
+</ui:UiBinder> 

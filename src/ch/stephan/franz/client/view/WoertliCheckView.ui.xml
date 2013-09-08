@@ -1,0 +1,71 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui">
+  <ui:style>
+    .important {
+    	font-weight: bold;
+    }
+  </ui:style>
+  <g:HTMLPanel>
+    <g:Grid>
+    	<g:row>
+    		<g:customCell>
+    			<g:Label text="Deutsch"/>
+    		</g:customCell>
+    		<g:customCell>
+    			<g:Label text="Was ist die Nutzlast einer Brieftaube?" ui:field="german"/>
+    		</g:customCell>
+    	</g:row>
+    	<g:row>
+    		<g:customCell>
+    			<g:Label text="Französich"/>
+    		</g:customCell>
+    		<g:customCell>
+    			<g:HorizontalPanel>
+    				<g:TextBox ui:field="franz"/>
+    				<g:Cell verticalAlignment="ALIGN_MIDDLE">
+    					<g:RadioButton name="new name" text="m" ui:field="rbMaennlich"/>
+    				</g:Cell>
+    				<g:Cell verticalAlignment="ALIGN_MIDDLE">
+    					<g:RadioButton name="new name" text="w" ui:field="rbWeiblich"/>
+    				</g:Cell>
+    			</g:HorizontalPanel>
+    		</g:customCell>
+    	</g:row>
+    	<g:row>
+    		<g:customCell>
+    			<g:Label text="1/10" ui:field="round"/>
+    		</g:customCell>
+    		<g:customCell>
+    			<g:HorizontalPanel>
+    				<g:Button ui:field="btnCheck" text="Check"/>
+    				<g:Button ui:field="btnNext" text="Nächstes"/>
+    			</g:HorizontalPanel>
+    		</g:customCell>
+    	</g:row>
+    	<g:row>
+    		<g:customCell>
+    			<g:Label/>
+    		</g:customCell>
+    		<g:customCell>
+    			<g:Label ui:field="richtig" text="Richtig" styleName="gwt-LabelRichtig"/>
+    		</g:customCell>
+    	</g:row>
+	    <g:row>
+            <g:customCell>
+                <g:Label/>
+            </g:customCell>
+            <g:customCell>
+                <g:Label ui:field="falsch" text="Falsch" styleName="gwt-LabelFalsch"/>
+            </g:customCell>
+        </g:row>
+    	<g:row>
+    		<g:customCell>
+    			<g:Label/>
+    		</g:customCell>
+    		<g:customCell>
+    			<g:Label ui:field="correctSolution" text="Dies wäre die richtige Lösung"/>
+    		</g:customCell>
+    	</g:row>
+    </g:Grid>
+  </g:HTMLPanel>
+</ui:UiBinder> 

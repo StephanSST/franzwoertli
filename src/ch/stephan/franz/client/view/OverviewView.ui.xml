@@ -1,0 +1,98 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui">
+  <ui:style>
+    .important {
+    	font-weight: bold;
+    }
+  </ui:style>
+  <g:HTMLPanel>
+    <g:HorizontalPanel verticalAlignment="ALIGN_MIDDLE">
+      <g:Grid width="100" height="100">
+        <g:row>
+          <g:customCell>
+            <g:Label text="Benutzer:" />
+          </g:customCell>
+          <g:customCell>
+          	<g:Label text="userName" ui:field="userName"/>
+          </g:customCell>
+        </g:row>
+        <g:row>
+          <g:customCell>
+            <g:Label text="Neue Wörter:" />
+          </g:customCell>
+          <g:customCell>
+            <g:TextBox ui:field="newWords" visibleLength="3" enabled="false" />
+          </g:customCell>
+        </g:row>
+        <g:row>
+          <g:customCell>
+            <g:Label text="bisher falsch:" />
+          </g:customCell>
+          <g:customCell>
+            <g:TextBox ui:field="onlyWrong" visibleLength="3" enabled="false" />
+          </g:customCell>
+        </g:row>
+        <g:row>
+          <g:customCell>
+            <g:Label text="einmal richtig:" />
+          </g:customCell>
+          <g:customCell>
+            <g:TextBox ui:field="oneRight" visibleLength="3" enabled="false" />
+          </g:customCell>
+        </g:row>
+        <g:row>
+          <g:customCell>
+            <g:Label text="zweimal richtig:" />
+          </g:customCell>
+          <g:customCell>
+            <g:TextBox ui:field="twoRight" visibleLength="3" enabled="false" />
+          </g:customCell>
+        </g:row>
+      </g:Grid>
+      <g:Grid>
+      	<g:row>
+      		<g:customCell>
+      			<g:Label text="enthaltene Unités:" />
+      		</g:customCell>
+      		<g:customCell>
+      			<g:TextBox ui:field="unites" enabled="false" visibleLength="10" />
+      		</g:customCell>
+      	</g:row>
+        <g:row>
+          <g:customCell>
+            <g:Label text="dreimal richtig:" />
+          </g:customCell>
+          <g:customCell>
+            <g:TextBox ui:field="threeRight" visibleLength="3" enabled="false" />
+          </g:customCell>
+        </g:row>
+        <g:row>
+          <g:customCell>
+            <g:Label text="viermal richtig:" />
+          </g:customCell>
+          <g:customCell>
+            <g:TextBox ui:field="fourRight" visibleLength="3" enabled="false" />
+          </g:customCell>
+        </g:row>
+        <g:row>
+          <g:customCell>
+            <g:Label text="fünfmal richtig:" />
+          </g:customCell>
+          <g:customCell>
+            <g:TextBox ui:field="fiveRight" visibleLength="3" enabled="false" />
+          </g:customCell>
+        </g:row>
+      	<g:row>
+      		<g:customCell>
+      			<g:Button ui:field="btnNext10" text="nächsten 10" />
+      		</g:customCell>
+      	</g:row>
+      </g:Grid>
+      <g:VerticalPanel>
+        <g:Cell height="10">
+        	<g:Label/>
+        </g:Cell>
+      </g:VerticalPanel>
+    </g:HorizontalPanel>
+  </g:HTMLPanel>
+</ui:UiBinder> 

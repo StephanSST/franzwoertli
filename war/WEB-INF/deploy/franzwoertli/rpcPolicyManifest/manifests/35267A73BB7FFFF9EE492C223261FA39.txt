@@ -1,0 +1,2 @@
+serviceClass: ch.stephan.franz.client.FranzWoertliService
+path: 349F50F9539E5800F04D6023824FB4E4.gwt.rpc

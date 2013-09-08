@@ -1,0 +1,20 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui">
+  <ui:style>
+    .important {
+    	font-weight: bold;
+    }
+  </ui:style>
+ <g:DialogBox autoHide="true" modal="true" width="100%">
+   <g:caption><b>Caption text</b></g:caption>
+   <g:HTMLPanel width="100%">
+     <g:VerticalPanel width="100%">
+     	<g:TextArea ui:field="errorStackTrace" width="100%" visibleLines="8" characterWidth="200"/>
+     	<g:Button ui:field='closeButton'>Schliessen</g:Button>
+     </g:VerticalPanel>
+   </g:HTMLPanel>
+ </g:DialogBox>
+
+</ui:UiBinder> 
+
+
